@@ -1,6 +1,6 @@
 ---
 title:  "[Tutorial][Android] 221018 WSL Ubuntu 20.04 Android SDK 설치"
-excerpt: "Android에 머신러닝 탑재하기"
+excerpt: "Android에 Mediapipe 탑재하기(3)"
 
 categories:
   - Tutorial

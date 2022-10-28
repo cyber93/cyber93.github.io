@@ -1,6 +1,6 @@
 ---
 title:  "[Tutorial][Bazel-MediaPipe] 221018 WSL Ubuntu 20.04 Bazel MediaPipe - Hello world"
-excerpt: "Android에 머신러닝 탑재하기"
+excerpt: "Android에 Mediapipe 탑재하기(4)"
 
 toc: true
 toc_sticky: true
@@ -55,23 +55,7 @@ sudo mkdir mediapipe-hello-world
 
 <p><img src="/assets/images/22101602.png" /></p>
 
-(2-3) 현재 상태 그대로 진행하면 Tensorflow 버전 오류가 발생합니다. WORKSPACE 파일에서 아래와 같이 Tensorflow 경로를 수정합니다(2022.10 기준).
-
-WORKSPACE 파일에서 "Tensorflow repo should always go after the other external dependencies."라는 문장을 검색하면 아래와 같이 _TENSORFLOW_GIT_COMMIT과 _TENSORFLOW_SHA256 항목을 확인할 수 있습니다. 두 항목을 아래와 같이 수정해줍니다.
-
-_TENSORFLOW_GIT_COMMIT<br>
-수정 전: 18a1dc0ba806dc023808531f0373d9ec068e64bf<br>
-수정 후: 52a2905cbc21034766c08041933053178c5d10e3
-
-_TENSORFLOW_SHA256<br>
-수정 전: 85b90416f7a11339327777bccd634de00ca0de2cf334f5f0727edcb11ff9289a<br>
-수정 후: 06d4691bcdb700f3275fa0971a1585221c2b9f3dffe867963be565a6643d7f56
-
-수정하면 아래와 같습니다.
-
-<p><img src="/assets/images/22101603.png" /></p>
-
-(2-4) 안드로이드 SDK와 NDK 개발환경을 설정합니다. 환경 설정에는 경로 내의 setup_android_sdk_and_ndk.sh	파일을 사용합니다.
+(2-3) 안드로이드 SDK와 NDK 개발환경을 설정합니다. 환경 설정에는 경로 내의 setup_android_sdk_and_ndk.sh	파일을 사용합니다.
 
 {% highlight shell linenos %}
 bash setup_android_sdk_and_ndk.sh
