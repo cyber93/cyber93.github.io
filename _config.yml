@@ -19,11 +19,11 @@ locale                   : "ko-KR"
 title                    : "Home"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Youngin"
-description              : "Youngin Shin's Blog"
-url                      : "https://younginshin115.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "cyber93"
+description              : "cyber93's Blog"
+url                      : "https://cyber93.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "younginshin115/younginshin115.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "cyber93/cyber93.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -90,7 +90,7 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://github.com/younginshin115"
+    - "https://github.com/cyber93"
 
 # Analytics
 analytics:
@@ -102,25 +102,25 @@ analytics:
 
 # Site Author
 author:
-  name             : "Youngin"
+  name             : "cyber93"
   avatar           : "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "신입 개발자 신영인입니다"
-  location         : "Seongnam, Korea"
+  bio              : "cyber93's Blog입니다"
+  location         : "Korea"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:younginshin115@gmail.com
+      url: mailto:cyber93@gmail.com
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/younginshin115"
+      url: "https://github.com/cyber93"
 
 # Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: https://github.com/younginshin115
+      url: https://github.com/cyber93
 
 
 # Reading Files
