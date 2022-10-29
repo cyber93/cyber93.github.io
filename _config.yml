@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "cyber93"
-  avatar           : "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "cyber93's Blog입니다"
   location         : "Korea"
   email            :
