@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Home"
+title                    : "cyber93's Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "cyber93"
+name                     : "[一日一學, 一日一新]"
 description              : "cyber93's Blog"
 url                      : "https://cyber93.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "cyber93"
   avatar           : "/assets/images/profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "cyber93's Blog입니다"
+  bio              : "Lee Han Deok"
   location         : "Korea"
   email            :
   links:
