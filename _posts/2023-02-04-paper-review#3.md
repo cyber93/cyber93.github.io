@@ -8,7 +8,7 @@ toc_sticky: true
 categories:
   - NVMe Storage Technology
 tags:
-  - Paper Review
+  - Paper Review of NVMe Storage Technology
 ---
 
 <br>
