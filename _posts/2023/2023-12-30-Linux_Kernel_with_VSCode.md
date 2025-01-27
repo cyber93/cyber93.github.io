@@ -1,20 +1,20 @@
 ﻿---
-title: "[Linux] Linux Kernel Compile (리눅스 커널 컴파일)"
-categories: 
-  - Linux Kernel Study
-tags:
-  - Linux
-  - Kernel
-  - 리눅스
-  - 커널
-  - 공부
-last_modified_at: 2020-09-13T18:00:00+09:00
+title:  "VSCode를 이용한 Linux Kernel 분석"
+excerpt: "Linux Kernel 이야기"
+
 toc: true
+toc_sticky: true
+
+categories:
+  - Linux Kernel
+tags:
+  - vscode
+  - Linux Kernel 이야기
 ---
 
-리눅스 커널은 수많은 파일들로 구성되어 있습니다. vscode로 열어보면 평소에 사용하던 '함수의 정의로 이동'이 보이지 않습니다.
 
- 
+
+리눅스 커널은 수많은 파일들로 구성되어 있습니다. vscode로 열어보면 평소에 사용하던 '함수의 정의로 이동'이 보이지 않습니다.
 
 tag를 이용한 방법을 소개합니다.
 
@@ -26,17 +26,17 @@ tag를 이용한 방법을 소개합니다.
 
 정의를 찾기 위해 vscode의 C/C++ extension을 설치합니다.
 
-![img](D:\이한덕\01.Workspace\000.Dev_Repository\001.GitHub_cyber93\cyber93.github.io\assets\images\kernel-vs1.png)
+![img](\assets\images\kernel-vs1.png)
 
 이것을 설치하면 다음과 같이 정의로 이동 기능이 활성화된 것을 확인할 수 있습니다.
 
-![img](D:\이한덕\01.Workspace\000.Dev_Repository\001.GitHub_cyber93\cyber93.github.io\assets\images\kernel-vs2.png)
+![img](\assets\images\kernel-vs2.png)
 
 정의로 이동과 함께 추가해야 할 기능이 더 있습니다.
 
 함수의 reference를 확인하는 기능을 추가해야 합니다. 많은 아키텍처와 파일들로 구성되어 있기에 정확한 곳을 찾는 것이 중요합니다. 
 
-![img](D:\이한덕\01.Workspace\000.Dev_Repository\001.GitHub_cyber93\cyber93.github.io\assets\images\kernel-vs3.png)
+![img](\assets\images\kernel-vs3.png)
 
 이 extension을 사용하기 위해서 global gnu를 설치합니다.
 
@@ -84,7 +84,7 @@ vscode는 이 세 파일을 사용하여 reference를 알려줍니다. 설치한
 
 Peek Definition을 통해 다음과 같이 호출된 파일과 호출된 횟수를 확인할 수 있습니다.
 
-![img](D:\이한덕\01.Workspace\000.Dev_Repository\001.GitHub_cyber93\cyber93.github.io\assets\images\kernel-vs4.png)
+![img](\assets\images\kernel-vs4.png)
 
 두 extension과 gnu global을 설치하여 리눅스 커널을 vscode와 연동했습니다.
 
@@ -214,8 +214,8 @@ kmemleak_write
 
 커널 분석에 필요한 플러그인을 추가로 설치합니다.
 
-![img](D:\이한덕\01.Workspace\000.Dev_Repository\001.GitHub_cyber93\cyber93.github.io\assets\images\kernel-vs5.png)
+![img](\assets\images\kernel-vs5.png)
 
 코드에 마우스를 올리면 커밋 내용을 볼 수 있습니다.
 
-![img](D:\이한덕\01.Workspace\000.Dev_Repository\001.GitHub_cyber93\cyber93.github.io\assets\images\kernel-vs6.png)
+![img](\assets\images\kernel-vs6.png)

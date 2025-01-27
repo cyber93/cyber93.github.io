@@ -1,16 +1,19 @@
 ﻿---
-title: "[Linux] Linux Kernel Compile (리눅스 커널 컴파일)"
-categories: 
-  - Linux Kernel Study
-tags:
-  - Linux
-  - Kernel
-  - 리눅스
-  - 커널
-  - 공부
-last_modified_at: 2020-09-13T18:00:00+09:00
+title:  "Kubernetes Init Container & PodInitializing"
+excerpt: "Kubernetes 이야기"
+
 toc: true
+toc_sticky: true
+
+categories:
+  - Kubernetes
+tags:
+  - Init Container
+  - k8s
+  - Kubernetes 이야기
 ---
+
+
 
 # [Kubernetes Init Container & PodInitializing](https://waspro.tistory.com/643)
 

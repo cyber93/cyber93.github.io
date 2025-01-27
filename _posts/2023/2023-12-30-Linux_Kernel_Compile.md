@@ -1,15 +1,15 @@
 ﻿---
-title: "[Linux] Linux Kernel Compile (리눅스 커널 컴파일)"
-categories: 
-  - Linux Kernel Study
-tags:
-  - Linux
-  - Kernel
-  - 리눅스
-  - 커널
-  - 공부
-last_modified_at: 2020-09-13T18:00:00+09:00
+title:  "Linux Kernel Compile (리눅스 커널 컴파일)"
+excerpt: "Linux Kernel 이야기"
+
 toc: true
+toc_sticky: true
+
+categories:
+  - Linux Kernel
+tags:
+  - vscode
+  - Linux Kernel 이야기
 ---
 
 
@@ -39,22 +39,22 @@ $ uname -r
 ```
 $ sudo apt-get update
 $ sudo apt-get install build-essential libncurses5 libncurses5-dev bin86 kernel-package libssl-dev bison flex libelf-dev
- ```
- 
+```
+
 ### 1. 커널 Configuration 파일(.config) 생성
  저는 현재 커널의 Configuration 파일을 복사해서 사용하겠습니다( 새로 만들어도 되지만 옵션 설정이 귀찮기 때문에.. ). 현재 커널의 configuration 파일은 **'/boot/{현재 커널 버전}'** 으로 저장되어 있습니다. 이것을 다음과 같은 명령어로 새롭게 컴파일할 커널의 폴더(위에서 알집해제한 것)에 .config라는 이름으로 복사합니다.  
  ```c
  $ cp /boot/config-5.4.0-47-generic ./.config
  ```
- 
+
 ### 2. 생성한 Configuration 파일로 커널 설정
   위에서 생성한 configuration 파일을 기반으로 새롭게 설치할 커널의 설정을 진행해 줍니다. 아래 명령어를 사용합니다.  
   ```
   $ sudo make menuconfig
   ```
   > 처음 커널 컴파일하는 경우 이 부분에서 많은 에러가 날 수 있습니다. 하지만 대부분 package나 dependence 한 것들이 없어서 나는 것($ ~~~ : not found) 일 것이니 직접 구글링을 통해 해결하리라 믿습니다. 커널 아마 대부분 sudo apt-get install {에러난것} 으로 설치하면 해결 될 것입니다.  
-   
-  
+
+
 그러면 다음과 같은 화면을 보실 수 있습니다.  
 ![Linux_kernel_compile_image4]({{site.url}}/assets/images/20200913/Linux_kernel_compile_4.jpg)  
 
@@ -76,9 +76,9 @@ grep -c processor /proc/cpuinfo
 사실 에러가 날때마다 바로바로 찾아서 추가했던지라 커널 컴파일에 관련된 툴과 패키지는 어떤 것들이 있는지 정확히 모릅니다. 제가 참고한 다른 블로그에서 아래 것들을 설치하고 진행하라고 하길래 추가해 봅니다.  
   ```
 sudo apt-get install ncurses-dev libssl-dev kernel-package
-```
+  ```
 > 만약 configuration과 관련된 선택 사항이 나온다면 아마 local configuration 사용하는 것으로 선택하시면 될 것 입니다.
- 
+
 ### 3. 커널 컴파일 실행
  커널 컴파일에는 두가지 방법이 있는 것을 알고 있습니다. 하나는 **make-kpkg**를 통해 커널 이미지를 만들고 이를 **dpkg**를 통해 등록하는법. 다른 하나는 **make modules**, **make modules_install**, **make install** 순으로 진행시켜 커널을 컴파일하고 자동으로 등록하는 법 입니다. 리눅스 커널관련 공부를 시작할 때 많이 쓰는 팽귄책에서는 후자를 사용했던 것 같은데 저는 전자를 사용해 보도록 하겠습니다. (제가 참고한 블로그 중 하나인 [3]에서 후자 방법을 사용합니다.)  
 
