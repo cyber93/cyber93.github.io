@@ -285,7 +285,7 @@ Describe 정보를 확인해 보면 Init Container가 존재하는 것을 확인
 
 
 
-![img](\assets\images\InitContainer)
+![img](\assets\images\InitContainer.png)
 
 
 
