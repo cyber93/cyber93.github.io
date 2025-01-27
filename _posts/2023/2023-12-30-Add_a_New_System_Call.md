@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 
 categories:
-  - NVDIMM Storage Technology
+  - Linux Kernel
 tags:
   - System call
   - Linux Kernel 이야기
