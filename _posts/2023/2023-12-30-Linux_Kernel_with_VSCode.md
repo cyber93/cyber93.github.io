@@ -20,9 +20,9 @@ tags:
 >
 > Extention Backup: https://github.com/cyber93/linux-kernel-vscode
 
-Linux OS가 설치된 PC상에 VSCode를 설치하고 아래 소개된 Extention을 이용합니다.
-
 # VSCode를 이용한 Linux Kernel 분석
+
+Linux OS가 설치된 PC상에 VSCode를 설치하고 아래 소개된 Extention을 이용합니다.
 
 ## 1. C/C++
 
