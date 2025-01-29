@@ -13,31 +13,26 @@ tags:
   - Kubernetes 이야기
 ---
 
+<br>
 
+> 참고
+>
+> - https://waspro.tistory.com/643
+> - [(참조) Kubernetes - 장애 발생 시 진단 Process 정의](https://waspro.tistory.com/563?category=831751)
+>
+> NUMA관련 잘 정리된 글이 있어 Backup합니다.
 
-# [Kubernetes Init Container & PodInitializing](https://waspro.tistory.com/643)
+# (공사 중)[Kubernetes Init Container & PodInitializing](https://waspro.tistory.com/643)
 
 Kubernetes는 배포 최소단위로 Pod를 사용한다. Pod는 하나 이상의 Container를 포함하는 배포 단위이다.
 
-이때, 컨테이너는 여러 형태로 존재할 수 있는데,
-
-기동 시점에 처리하고 종료되고 Init Container
-
-실제 업무를 처리하는 Runtime Container
-
-보조 역할로써 배포되는 SideCar Container 등이 존재한다.
+이때, 컨테이너는 여러 형태로 존재할 수 있는데, 기동 시점에 처리하고 종료되고 **Init Container**, 실제 업무를 처리하는 **Runtime Container**, 보조 역할로써 배포되는 **SideCar Container** 등이 존재한다.
 
 우리는 일반적으로 생각하는 Runtime Container만 다루곤 하는데, 때로는 다른 형태의 컨테이너를 이해하고 있어야 실제 장애에 대응할 수 있는 상황이 주어지기도 한다.
 
 예를 들어 다음과 같은 상황을 살펴보도록 하자.
 
 앞서 다음 포스팅에서 트러블슈팅을 진행하는 몇가지 방법에 대해 알아보았다.
-
- 
-
-[(참조) Kubernetes - 장애 발생 시 진단 Process 정의](https://waspro.tistory.com/563?category=831751)
-
- 
 
 이를 준수하여 트러블 슈팅을 충분히 진행할 수 있지만, 다음과 같은 상황에서는 대처할 수 없다.
 
