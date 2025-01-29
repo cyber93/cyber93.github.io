@@ -1,5 +1,5 @@
 ﻿---
-title:  "Add a New System Call (시스템콜 추가하기)"
+title:  "Add a New System Call"
 excerpt: "Linux Kernel 이야기"
 
 toc: true
@@ -8,7 +8,7 @@ toc_sticky: true
 categories:
   - Linux Kernel
 tags:
-  - System call
+  - System Call
   - Linux Kernel 이야기
 ---
 

@@ -8,7 +8,7 @@ toc_sticky: true
 categories:
   - Linux Kernel
 tags:
-  - vscode
+  - VSCode
   - Linux Kernel 이야기
 ---
 
@@ -17,10 +17,12 @@ tags:
 > 참고: https://joolib.tistory.com/18
 >
 > VSCode를 이용한 Linux Kernel 분석 방법에 대해 정리합니다.
+>
+> Extention Backup: https://github.com/cyber93/linux-kernel-vscode
 
 Linux OS가 설치된 PC상에 VSCode를 설치하고 아래 소개된 Extention을 이용합니다.
 
-
+# VSCode를 이용한 Linux Kernel 분석
 
 ## 1. C/C++
 

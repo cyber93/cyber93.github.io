@@ -1,5 +1,5 @@
 ﻿---
-title:  "Linux Kernel Compile (리눅스 커널 컴파일)"
+title:  "Linux Kernel Compile"
 excerpt: "Linux Kernel 이야기"
 
 toc: true
@@ -8,12 +8,13 @@ toc_sticky: true
 categories:
   - Linux Kernel
 tags:
-  - vscode
+  - Kernel Compile
   - Linux Kernel 이야기
 ---
 
+이 포스트에서는 우분투에서 리눅스 커널을 컴파일 하는 법에 대하여 정리하였습니다. 커널 컴파일을 하는 경우는 보통, 해당 우분투의 커널의 버전을 바꾸거나, 커널을 수정한 뒤 그것을 반영하기 위해 하는 등이 있을 것 같습니다. 이 포스트에서는 커널 버전을 바꿔보도록 하겠습니다. 
 
-이 포스트에서는 우분투에서 리눅스 커널을 컴파일 하는 법에 대하여 정리하였습니다. 커널 컴파일을 하는 경우는 보통, 해당 우분투의 커널의 버전을 바꾸거나, 커널을 수정한 뒤 그것을 반영하기 위해 하는 등이 있을 것 같습니다. 이 포스트에서는 커널 버전을 바꿔보도록 하겠습니다.  
+# Linux Kernel Compile
 
 ## 현재 커널 버전 확인
  우분투에서는 다음 명령어를 통해 현재 커널의 버전을 확인할 수 있습니다.  
